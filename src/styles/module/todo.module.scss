@@ -1,0 +1,58 @@
+$bgColor: rgb(255, 255, 255);
+$ItembgColor: rgb(224, 224, 224);
+$Iconbg: #ececec;
+$texthover: #b1b0b0;
+.wrapper{
+    padding:20px;
+    background:$Iconbg;
+    border-radius: 4px;
+    color:#727272;
+}
+.todoContainer{
+    background:$bgColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:14px;
+    padding:10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.todoContent{
+    word-break: break-all;
+    &--completed{
+        text-decoration: line-through;
+        color:#b2b2b2;
+    }
+}
+.time{
+    font-size:13px;
+}
+.emptylist{
+    padding:5px;
+    width: 180px;
+    background: $ItembgColor;
+    margin:0 auto;
+    border-radius: 4px;
+}
+.text{
+    display:flex;
+    flex-direction:column;
+}
+.action{
+    display: flex;
+    font-size: 20px;
+}
+.icon{
+    background:$Iconbg;
+    padding:5px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin:0 4px;
+    &:hover{
+        background: $texthover;
+    }
+}

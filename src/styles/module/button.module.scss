@@ -1,0 +1,26 @@
+$bgColor: #b2b2b2;
+$selectbgColor:#ececec;
+$bgPrimary: rgb(82, 82, 189);
+$bgSecondary: rgb(160, 30, 30);
+$white: #ffffff;
+.button{
+    background: $bgColor;
+    padding:10px 20px;
+    border-radius:5px;
+}
+.button--primary{
+    background: $bgPrimary;
+    color: $white;
+}
+.button--secondary{
+    background: $bgSecondary;
+    color:$white
+}
+.select{
+    background:$selectbgColor;
+    padding:5px 15px;
+    margin:0 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline:none;
+}
