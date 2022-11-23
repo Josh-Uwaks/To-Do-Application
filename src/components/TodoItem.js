@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux'
 import { deleteTodo } from '../app/slices/todoSlice'
 import toast from 'react-hot-toast'
 import Modal from './Modal/modal'
+import Checkbox from './Checkbox'
 
 function TodoItem({item}){
     const {title, time} = item
@@ -29,7 +30,7 @@ function TodoItem({item}){
             <div className={styles.todoContainer}>
                 <div className={styles.todoItem}>
                     <div className='flex items-center'>
-                        []
+                        {/* <Checkbox/> */}
                         <div className={styles.text}>
                         <p className={getClasses([styles.todoContent, item.status === 'completed' && styles["todoContent--completed"]])}>{title}</p>
                         <p className={styles.time}>{format(new Date(time), 'p, MM/dd/yyyy')}</p>
